@@ -7,7 +7,7 @@ public class Main {
         int total = 0;
         int i = 0;
         for (; total < 12_000_000; i++) {
-            total = total + total * 7 / 100;
+            total += total * 7 / 100;
             total = total + saving;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
@@ -37,8 +37,8 @@ public class Main {
         }
         // Задание 4
         System.out.println("Задание 4");
-        int friday = 7;
-        for ( friday =1; friday <=31; friday ++){
+        int friday = 0;
+        for (friday +=7; friday <=31;friday ++) {
             if (friday % 7 ==0) {
                 System.out.println("Сегодня пятница,"+ friday + "-е число. Необходимо подготовить отчет.");
             }
